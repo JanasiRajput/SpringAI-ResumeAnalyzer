@@ -1,0 +1,84 @@
+<div class="hero-section">
+  <div class="hero-overlay">
+    <h1 class="hero-title">Resume Analyzer</h1>
+    <p class="hero-subtitle">Minimalist Edition | High Visibility</p>
+  </div>
+</div>
+
+<main class="main-container">
+  <!-- Input Section -->
+  <article class="workspace">
+    <div class="input-card">
+      <div class="card-header">
+        <span>Your Resume</span>
+      </div>
+      <textarea 
+        id="resume" 
+        [(ngModel)]="resumeText" 
+        placeholder="Enter your resume text here..."></textarea>
+    </div>
+
+    <div class="input-card">
+      <div class="card-header">
+        <span>Job Description</span>
+      </div>
+      <textarea 
+        id="jobDesc" 
+        [(ngModel)]="jobDescription" 
+        placeholder="Enter the target job description here..."></textarea>
+    </div>
+  </article>
+
+  <!-- Action Section -->
+  <section class="action-zone">
+    <button 
+      class="submit-btn" 
+      (click)="onAnalyze()"
+      [disabled]="loading">
+      {{ loading ? 'ANALYZING...' : 'RUN ANALYSIS' }}
+    </button>
+  </section>
+
+  <!-- Analysis Progress -->
+  <div *ngIf="loading" class="loading-overlay">
+    <div class="loader"></div>
+    <p class="loader-text">Analyzing...</p>
+  </div>
+
+  <!-- Insights Region -->
+  <div *ngIf="result" class="results-region">
+    <header class="results-header">
+      <div class="score-container">
+        <svg viewBox="0 0 36 36" class="circular-chart">
+          <path class="circle-bg"
+            d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831" />
+          <path class="circle"
+            [attr.stroke-dasharray]="result.matchScore + ', 100'"
+            d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831" />
+          <text x="18" y="20.35" class="percentage">{{ result.matchScore }}%</text>
+        </svg>
+        <span class="score-label">MATCH SCORE</span>
+      </div>
+    </header>
+
+    <div class="insight-grid">
+      <section class="expert-card">
+        <div class="expert-header">
+          <h3>MISSING SKILLS</h3>
+        </div>
+        <ul class="skill-list">
+          <li *ngFor="let skill of result.missingSkills">{{ skill }}</li>
+        </ul>
+      </section>
+
+      <section class="expert-card">
+        <div class="expert-header">
+          <h3>SUGGESTIONS</h3>
+        </div>
+        <ul class="advice-list">
+          <li *ngFor="let suggestion of result.suggestions">{{ suggestion }}</li>
+        </ul>
+      </section>
+    </div>
+  </div>
+</main>
