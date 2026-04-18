@@ -39,7 +39,7 @@ A high-performance, full-stack AI application designed to revolutionize the job 
    ```
 
 ## 🌐 Connect with Me
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-Connect-blue?style=for-the-badge&logo=linkedin)](YOUR_LINKEDIN_URL_HERE)
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-Connect-blue?style=for-the-badge&logo=linkedin)]([YOUR_LINKEDIN_URL_HERE](https://www.linkedin.com/in/janasi-rajput-837469284/)
 
 ---
 *Created with ❤️ for the "Teach Me Something" presentation series.*
