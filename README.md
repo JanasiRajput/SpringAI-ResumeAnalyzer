@@ -10,7 +10,7 @@ A high-performance, full-stack AI application designed to revolutionize the job 
 - **AI-Powered Suggestions**: Provides actionable feedback to improve resume content and structure.
 - **Fast vs. Deep Thinking Modes**: Toggle between rapid analysis and thorough evaluation using Google Gemini.
 
-![Home](Home.png)
+![Home](home.png)
 ![Analyse](Analyise.png)
 
 ## 🛠️ Technology Stack
