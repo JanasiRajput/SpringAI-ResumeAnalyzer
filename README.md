@@ -1,7 +1,5 @@
 # 🚀 AI Resume Analyzer
 
-![Resume Analyzer UI](file:///Users/janasirajput/.gemini/antigravity/brain/6e0f9661-87ad-4ebe-8f3a-6667840a26ba/resume_analyzer_ui_mockup_1776466478125.png)
-
 A high-performance, full-stack AI application designed to revolutionize the job application process. Built with **Spring Boot**, **Spring AI (Gemini)**, and **Angular**, this tool provides real-time, deep-thinking analysis of resumes against job descriptions.
 
 ## ✨ Key Features
