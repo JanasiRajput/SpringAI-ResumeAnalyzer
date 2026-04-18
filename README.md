@@ -10,6 +10,9 @@ A high-performance, full-stack AI application designed to revolutionize the job 
 - **AI-Powered Suggestions**: Provides actionable feedback to improve resume content and structure.
 - **Fast vs. Deep Thinking Modes**: Toggle between rapid analysis and thorough evaluation using Google Gemini.
 
+![Home](Home.png)
+![Analyse](Analyise.png)
+
 ## 🛠️ Technology Stack
 - **Backend**: Java 21, Spring Boot 3.4.2, Spring AI
 - **AI Engine**: Google Gemini (Flash & Pro models)
